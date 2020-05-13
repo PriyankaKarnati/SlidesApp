@@ -1,4 +1,4 @@
-package com.example.slides.ExtGallery
+package com.example.slides.extGallery
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.slides.R
 import com.example.slides.bindImage
-import kotlin.reflect.typeOf
 
 class ExtPhotoAdapter:ListAdapter<String,ExtPhotoAdapter.ListItemViewHolder>(DiffCallBack){
 
@@ -46,7 +45,7 @@ class ExtPhotoAdapter:ListAdapter<String,ExtPhotoAdapter.ListItemViewHolder>(Dif
 
             companion object DiffCallBack : DiffUtil.ItemCallback<String>() {
         override fun areItemsTheSame(oldItem: String, newItem: String): Boolean {
-            return oldItem is String == newItem is String
+            return true
         }
 
         override fun areContentsTheSame(oldItem: String, newItem: String): Boolean {

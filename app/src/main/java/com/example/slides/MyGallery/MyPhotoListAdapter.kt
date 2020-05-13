@@ -1,4 +1,4 @@
-package com.example.slides.MyGallery
+package com.example.slides.myGallery
 //
 //import android.content.Context
 //import android.graphics.drawable.ColorDrawable

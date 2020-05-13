@@ -1,4 +1,4 @@
-package com.example.slides.MyGallery
+package com.example.slides.myGallery
 
 import androidx.lifecycle.ViewModel
 
