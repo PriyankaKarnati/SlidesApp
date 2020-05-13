@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -19,6 +20,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MyGalFragment : Fragment(){
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,13 +30,13 @@ class MyGalFragment : Fragment(){
 
         val buttonID = viewS?.findViewById<FloatingActionButton>(R.id.fab)
         buttonID?.setOnClickListener {
-
-
             val intent = Intent(this.context, ExtGalFragment::class.java)
             startActivity(intent)
+           
 
 
         }
         return viewS
+
     }
 }

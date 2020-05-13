@@ -10,7 +10,11 @@
         android:id="@+id/myGalFragment"
         android:name="com.example.slides.myGallery.MyGalFragment"
         android:label="fragment_gal"
-        tools:layout="@layout/fragment_gal" />
+        tools:layout="@layout/fragment_gal">
+        <action
+            android:id="@+id/action_myGalFragment_to_extGalFragment"
+            app:destination="@id/extGalFragment" />
+    </fragment>
     <fragment
         android:id="@+id/extGalFragment"
         android:name="com.example.slides.extGallery.ExtGalFragment"
